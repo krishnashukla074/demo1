@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Name — Software Developer</title>
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+
+<!-- ===== NAV ===== -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav-logo">YN<span>.</span></a>
+  <nav class="nav-links">
+    <a href="#work">work</a>
+    <a href="#about">about</a>
+    <a href="#experience">experience</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+    <span class="toggle-dot"></span>
+  </button>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-text">
+    <p class="eyebrow">// software developer</p>
+    <h1 class="hero-title">
+      Hi, I'm <span class="grad">Your Name</span>.<br>
+      I build things for <span id="typed" class="typed"></span><span class="cursor-blink">|</span>
+    </h1>
+    <p class="hero-sub">A software developer focused on fast, accessible, well-crafted products — from backend systems to the pixels people actually click on.</p>
+    <div class="hero-cta">
+      <a href="#work" class="btn btn-primary magnetic"><span>See my work</span></a>
+      <a href="#contact" class="btn btn-ghost magnetic"><span>Get in touch</span></a>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="code-card" id="codeCard">
+      <div class="code-card-head">
+        <span class="dot" style="background:#FF5D8F"></span>
+        <span class="dot" style="background:#FFB020"></span>
+        <span class="dot" style="background:#00C2A8"></span>
+        <span class="code-card-title">about-me.js</span>
+      </div>
+      <pre class="code-body"><span class="c-key">const</span> <span class="c-var">developer</span> = {
+  <span class="c-prop">name</span>: <span class="c-str">"Your Name"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"Python"</span>],
+  <span class="c-prop">loves</span>: <span class="c-str">"clean code"</span>,
+  <span class="c-prop">available</span>: <span class="c-key">true</span>
+};</pre>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT / SKILLS ===== -->
+<section class="about" id="about">
+  <div class="section-head reveal">
+    <p class="eyebrow">// about</p>
+    <h2>A little about how I work.</h2>
+  </div>
+  <div class="about-grid">
+    <p class="about-text reveal">
+      I'm a developer who enjoys turning ambiguous problems into simple, reliable software. I care about
+      clean architecture, thoughtful UX, and shipping things that actually get used. When I'm not coding,
+      I'm probably reading about design systems or tinkering with a side project.
+    </p>
+    <div class="stats reveal">
+      <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">years experience</span></div>
+      <div class="stat"><span class="stat-num" data-count="30">0</span><span class="stat-label">projects shipped</span></div>
+      <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-label">happy clients</span></div>
+    </div>
+  </div>
+
+  <div class="marquee-wrap reveal">
+    <div class="marquee" id="marquee">
+      <div class="marquee-track">
+        <span class="pill">JavaScript</span><span class="pill">TypeScript</span><span class="pill">React</span>
+        <span class="pill">Node.js</span><span class="pill">Python</span><span class="pill">PostgreSQL</span>
+        <span class="pill">GraphQL</span><span class="pill">Docker</span><span class="pill">AWS</span>
+        <span class="pill">Next.js</span><span class="pill">Tailwind</span><span class="pill">Git</span>
+      </div>
+      <div class="marquee-track" aria-hidden="true">
+        <span class="pill">JavaScript</span><span class="pill">TypeScript</span><span class="pill">React</span>
+        <span class="pill">Node.js</span><span class="pill">Python</span><span class="pill">PostgreSQL</span>
+        <span class="pill">GraphQL</span><span class="pill">Docker</span><span class="pill">AWS</span>
+        <span class="pill">Next.js</span><span class="pill">Tailwind</span><span class="pill">Git</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="work" id="work">
+  <div class="section-head reveal">
+    <p class="eyebrow">// selected work</p>
+    <h2>Things I've built.</h2>
+  </div>
+
+  <div class="bento">
+    <article class="card card-big tilt reveal">
+      <div class="card-tags"><span>Full-stack</span><span>React · Node</span></div>
+      <h3>Project One</h3>
+      <p>A short description of this project — the problem it solved, your role, and the impact it had. Replace with your real project.</p>
+      <a href="#" class="card-link">View project →</a>
+    </article>
+    <article class="card tilt reveal">
+      <div class="card-tags"><span>Mobile</span></div>
+      <h3>Project Two</h3>
+      <p>Brief description of a second project and what made it interesting to build.</p>
+      <a href="#" class="card-link">View project →</a>
+    </article>
+    <article class="card tilt reveal">
+      <div class="card-tags"><span>API</span></div>
+      <h3>Project Three</h3>
+      <p>A short summary of another piece of work worth showing off.</p>
+      <a href="#" class="card-link">View project →</a>
+    </article>
+    <article class="card card-wide tilt reveal">
+      <div class="card-tags"><span>Open source</span><span>CLI tool</span></div>
+      <h3>Project Four</h3>
+      <p>Describe a fourth project here — maybe something open-source or a personal experiment.</p>
+      <a href="#" class="card-link">View project →</a>
+    </article>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section class="experience" id="experience">
+  <div class="section-head reveal">
+    <p class="eyebrow">// experience</p>
+    <h2>Where I've worked.</h2>
+  </div>
+  <div class="timeline">
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2023 — Present</span>
+        <h3>Senior Developer, Company Name</h3>
+        <p>Describe your role and key achievements here.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2021 — 2023</span>
+        <h3>Developer, Previous Company</h3>
+        <p>Describe your role and key achievements here.</p>
+      </div>
+    </div>
+    <div class="timeline-item reveal">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <span class="timeline-date">2020 — 2021</span>
+        <h3>Junior Developer, First Company</h3>
+        <p>Describe your role and key achievements here.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="contact" id="contact">
+  <div class="blob blob-3"></div>
+  <p class="eyebrow reveal">// get in touch</p>
+  <h2 class="reveal">Let's build something<br>worth shipping.</h2>
+  <a href="mailto:you@example.com" class="btn btn-primary btn-lg magnetic reveal" id="mailBtn"><span>Say hello →</span></a>
+  <div class="socials reveal">
+    <a href="#">GitHub</a><a href="#">LinkedIn</a><a href="#">Twitter</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Your Name. Built with HTML, CSS &amp; JS.</p>
+</footer>
+
+<canvas id="confetti"></canvas>
+<script src="script.js"></script>
+</body>
+</html>
